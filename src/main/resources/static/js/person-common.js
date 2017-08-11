@@ -16,7 +16,7 @@
 
     var firstTime = false;
     function initResumeBind() {
-        $("#resume-btn").click( function() {
+        $("#skill").on("click", function() {
             if (!firstTime) {
                 var startColor = '#f4d03f';
                 var endColor = '#f4d03f';

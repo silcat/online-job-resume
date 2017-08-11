@@ -10,18 +10,18 @@
         <div class="description">
             <!--RESUME TAB LISTS-->
             <ul class=' nav nav-pills'>
-                <li><a href="#tab-1" data-toggle="tab" class="active icon-bg icon-skills">
-                    <div>职业技能</div>
-                </a></li>
-                <li><a href="#tab-2" data-toggle="tab" class="icon-bg icon-education">
+                <li><a href="#tab-1" data-toggle="tab" class="icon-bg icon-education">
                     <div>教育</div>
+                </a></li>
+                <li><a href="#tab-2" data-toggle="tab" id="skill" class="active icon-bg icon-skills">
+                    <div>职业技能</div>
                 </a></li>
                 <li><a href="#tab-3" data-toggle="tab" class="icon-bg icon-employment">
                     <div>工作经历</div>
                 </a></li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane fade in active" id='tab-1'>
+                <div class="tab-pane fade " id='tab-2'>
                     <h3 class="title">MY SKILLS</h3><!--SKILLS WITH BAR DISPLAY-->
                     <ul class="skills-list no-padding">
                         <li class="row">
@@ -84,7 +84,7 @@
                 </div><!--RESUME FIRST TAB/SKILL TAB DETAILS ENDS-->
 
                 <!--RESUME SECOND TAB/EDUCATION TAB DETAILS-->
-                <div class="tab-pane fade " id='tab-2'>
+                <div class="tab-pane fade in active" id='tab-1'>
                     <h3 class="title">EDUCATIONS</h3>
                     <ul class="education-class">
                         <li>
@@ -165,9 +165,9 @@
         </div>
     </li>
 </aside>
-<script src="/static/js/person-common.js"></script>
-<script>
-    $(document).ready(function () {
+<script src="/static/js/person.js"></script>
+<script >
+    $(document).ready(function() {
         page.init();
     });
 </script>
