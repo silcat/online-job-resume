@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<body>
+<aside  th:fragment="aside">
+    <div class="col-sm-4">
+        <!--namecard-->
+        <div id="namecard" class="namecard">
+            <div class="shadow-img"></div>
+            <h1 class="maintitle"><span class="invert">杨天峰</span></h1><!--PROFILE NAME-->
+            <h3 class="invert sub-maintitle">Web
+                <span class="rotate">java</span><!--SUBTITLE AFTET NAME-->
+            </h3>
+            <img id="profile-img" class="profile-img transparent" src="images/profile-thum.png" alt="profile-image"/><!--PROFILE IMAGE-->
+        </div><!--/#namecard-->
+        <!--menu-->
+        <div id="menu-container" style="transform: translate3d(0px, 0px, 0px); opacity: 1;">
+            <!--PAGE MENU-->
+            <ul class="nav-menu no-padding">
+                <li class="nav-btn selected" title="Home" data-page="home">
+                    <div class="hover-background"></div>
+                    <span data-url="/templates/part/person-home.html" onclick="page.fillMain(this)">个人简介</span><i class="fa fa-user fa-fw"></i>
+                </li>
+                <li class="nav-btn" id="resume-btn" title="Resume"  data-page="resume">
+                    <div class="hover-background"></div>
+                    <span data-url="/templates/part/person-resume.html" onclick="page.fillMain(this)">职业技能</span><i class="fa fa-file-text fa-fw"></i>
+                </li>
+                <li class="nav-btn" title="Contact" id="contact-link" data-page="contact">
+                    <div class="hover-background"></div>
+                    <span data-url="/templates/part/person-contact.html" onclick="page.fillMain(this)">联系我</span><i class="fa fa-paper-plane fa-fw"></i>
+                </li>
+                <li class="nav-btn" title="Contact" >
+                    <div class="hover-background"></div>
+                    <span href="/">返回首页</span><i class="fa fa-paper-plane fa-fw"></i>
+                </li>
+            </ul><!--/.nav-menu __PAGE MENU ENDS-->
+
+            <!--SOCIAL NAV MENU-->
+            <div class="social-menu-container">
+                <ul class="social-menu no-padding">
+                    <li><a href="javascript:;"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://shop156573949.taobao.com/" target="_blank"><i class="fa fa-leaf"></i></a></li>
+                    <li><a href="javascript:;"><i class="fa fa-pinterest-p"></i></a></li>
+                </ul>
+            </div><!--/.social-menu-container-->
+        </div><!--#menu-container-->
+    </div>
+</aside>
+<script src="/static/js/person.js"></script>
+<script>
+    $(document).ready(function () {
+        page.init();
+    });
+</script>
+</body>
+</html>

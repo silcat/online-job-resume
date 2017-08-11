@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/part/person-head :: head"></head>
+<body>
+<div class="container">
+    <div id="content" class="row" >
+        <div th:replace="/part/person-aside::aside" ></div>
+
+        <div class="col-sm-8 page-segment">
+            <ul class="page-container no-padding">
+                <div id="main">
+
+                </div>
+            </ul>
+            <div class="row mobile-nav-container">
+                <!--SOCIAL NAV FOR MOBILE-->
+                <ul class="mobile-social no-padding">
+                    <li>Connect With Me</li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul><!--/.mobile-social-->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/person.js"></script>
+<script >
+    $(document).ready(function() {
+        page.init();
+    });
+</script>
+</body>
+</html>

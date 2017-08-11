@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<body>
+<aside th:fragment="resume">
+    <li id="resume">
+        <div class="title-container">
+            <div class="shadow-img"></div>
+            <h2 class="rotate-out"><span class="invert">我的</span> 技能</h2> <!--RESUME TITLE-->
+        </div>
+        <div class="description">
+            <!--RESUME TAB LISTS-->
+            <ul class=' nav nav-pills'>
+                <li><a href="#tab-1" data-toggle="tab" class="active icon-bg icon-skills">
+                    <div>职业技能</div>
+                </a></li>
+                <li><a href="#tab-2" data-toggle="tab" class="icon-bg icon-education">
+                    <div>教育</div>
+                </a></li>
+                <li><a href="#tab-3" data-toggle="tab" class="icon-bg icon-employment">
+                    <div>工作经历</div>
+                </a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id='tab-1'>
+                    <h3 class="title">MY SKILLS</h3><!--SKILLS WITH BAR DISPLAY-->
+                    <ul class="skills-list no-padding">
+                        <li class="row">
+                            <div class="col-xs-2">
+                                <div class="fw-mid">JAVA相关</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="bar">
+                                    <div class="percentage" id="bar1" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="row">
+                            <div class="col-xs-2">
+                                <div class="fw-mid">JS</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="bar">
+                                    <div class="percentage" id="bar2" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-2">
+                                <div class="fw-mid">LUNIX</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="bar">
+                                    <div class="percentage" id="bar3" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul><!--SKILLS WITH BAR DISPLAY ENDS-->
+
+                    <!--SKILLS WITH CIRCLE DISPLAY-->
+                    <div class="circle-skill-container">
+                        <h3 class="title">OTHER SKILLS</h3>
+                        <div class="row">
+                            <div class="col-xs-4 center-align">
+                                <div class="circle-bar" id="line-container1">
+                                    <div class="progressbar-text" id="progress-text1"></div>
+                                </div>
+                                <h5>bootstrap</h5>
+                            </div>
+                            <div class="col-xs-4 center-align">
+                                <div class="circle-bar" id="line-container2">
+                                    <div class="progressbar-text" id="progress-text2"></div>
+                                </div>
+                                <h5>Spring Cloud</h5>
+                            </div>
+                            <div class="col-xs-4 center-align">
+                                <div class="circle-bar" id="line-container3">
+                                    <div class="progressbar-text" id="progress-text3"></div>
+                                </div>
+                                <h5>HTML及Themeleaf</h5>
+                            </div>
+                        </div>
+                    </div><!--SKILLS WITH CIRCLE DISPLAY ENDS-->
+                </div><!--RESUME FIRST TAB/SKILL TAB DETAILS ENDS-->
+
+                <!--RESUME SECOND TAB/EDUCATION TAB DETAILS-->
+                <div class="tab-pane fade " id='tab-2'>
+                    <h3 class="title">EDUCATIONS</h3>
+                    <ul class="education-class">
+                        <li>
+                            <!--EDUCATION LIST ITEM-->
+                            <h4 class="title">MSc in Computer Sciene<i class="fa fa-sort-desc pull-right"></i></h4>
+                            <div class="list-content">
+                                <h5 class="title">Consectetur adipiscing <span class="list-year">(2014 - 2005)</span>
+                                </h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus
+                                    sit.. consectetur adipiscing Vivamus sit. Vivamus sit</p>
+                                <!--EDUCATION LIST DETAILS-->
+                            </div>
+                        </li>
+                        <li>
+                            <!--EDUCATION LIST ITEM-->
+                            <h4 class="title">Grad At Computer Engineering<i class="fa fa-sort-desc pull-right"></i>
+                            </h4>
+                            <div class="list-content current">
+                                <h5 class="title">Consectetur adipiscing <span class="list-year">(2014 - 2005)</span>
+                                </h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus
+                                    sit.. consectetur adipiscing Vivamus sit. Vivamus sit</p>
+                                <!--EDUCATION LIST DETAILS-->
+                            </div>
+                        </li>
+                        <li>
+                            <!--EDUCATION LIST ITEM-->
+                            <h4 class="title">College<i class="fa fa-sort-desc pull-right"></i></h4>
+                            <div class="list-content">
+                                <h5 class="title">Consectetur adipiscing <span class="list-year">(2014 - 2005)</span>
+                                </h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus
+                                    sit.. consectetur adipiscing Vivamus sit. Vivamus sit</p>
+                                <!--EDUCATION LIST DETAILS-->
+                            </div>
+                        </li>
+                        <li>
+                            <!--EDUCATION LIST ITEM-->
+                            <h4 class="title">Schools<i class="fa fa-sort-desc pull-right"></i></h4>
+                            <div class="list-content">
+                                <h5 class="title">Consectetur adipiscing <span class="list-year">(2014 - 2005)</span>
+                                </h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus
+                                    sit.. consectetur adipiscing Vivamus sit. Vivamus sit</p>
+                                <!--EDUCATION LIST DETAILS-->
+                            </div>
+                        </li>
+                    </ul>
+                </div><!--RESUME SECOND TAB/EDUCATION TAB DETAILS ENDS-->
+                <!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+                <div class="tab-pane fade " id='tab-3'>
+                    <h3 class="title">EMPLOYMENT</h3>
+                    <ul class="employment-class tab-cont">
+                        <li>
+                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                            <h4>Manager <span class="year">2014 - 2005</span></h4>
+                            <h5>Consectetur adipiscing</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus sit..
+                                consectetur adipiscing Vivamus sit.</p><!--EMPLOYMENT LIST DETAILS-->
+                        </li>
+                        <li>
+                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                            <h4>Manager <span class="year">2014 - 2005</span></h4>
+                            <h5>Consectetur adipiscing</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus sit..
+                                consectetur adipiscing Vivamus sit.</p><!--EMPLOYMENT LIST DETAILS-->
+                        </li>
+                        <li>
+                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                            <h4>Manager <span class="year">2014 - 2005</span></h4>
+                            <h5>Consectetur adipiscing</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit Vivamus sit. Vivamus sit..
+                                consectetur adipiscing Vivamus sit.</p><!--EMPLOYMENT LIST DETAILS-->
+                        </li>
+                    </ul>
+                </div><!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+            </div>
+        </div>
+    </li>
+</aside>
+<script src="/static/js/person-common.js"></script>
+<script>
+    $(document).ready(function () {
+        page.init();
+    });
+</script>
+</body>
+</html>

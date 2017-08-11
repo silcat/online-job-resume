@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<body>
+<aside  th:fragment="home">
+    <!--HOME/PROFILE PAGE-->
+    <li id="home" class="selected">
+        <div class="title-container ">
+            <div class="shadow-img"></div>
+            <h2 class="rotate-out">我的简介</h2><!--HOME TITLE-->
+        </div>
+        <div class="description ">
+            <div class="watermark-home"></div>
+            <div class="fade-text transparent">
+                <!--DESCRIPTION ON HOME-->
+                <div class="strong-text">Hello, 我是 <span>杨峰</span></div>
+                <div class="focus-text"><span>java开发工程师 </span><span></span></div>
+                <p class="large-paragraph"></p>
+
+                <h3 class="personal-info-title title">个人信息</h3>
+                <ul class="personal-info">
+                    <li class="rotate-out "><label>姓名</label><span>999</span></li>
+                    <li class="rotate-out "><label>地址</label><span>111</span></li>
+                    <li class="rotate-out "><label>Email</label><span>999</span></li>
+                    <li class="rotate-out "><label>电话</label><span>1111</span></li>
+                </ul><!--/ul.personal-info-->
+            </div>
+        </div>
+    </li><!--/#home-->
+</aside>
+</body>
+</html>
