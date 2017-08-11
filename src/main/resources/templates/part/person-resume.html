@@ -5,12 +5,12 @@
     <li id="resume">
         <div class="title-container">
             <div class="shadow-img"></div>
-            <h2 class="rotate-out"><span class="invert">我的</span> 技能</h2> <!--RESUME TITLE-->
+            <h2 class="rotate-out"><span class="invert">我的技能</span> </h2> <!--RESUME TITLE-->
         </div>
         <div class="description">
             <!--RESUME TAB LISTS-->
             <ul class=' nav nav-pills'>
-                <li><a href="#tab-1" data-toggle="tab" class="icon-bg icon-education">
+                <li class="active"><a href="#tab-1" data-toggle="tab" class="icon-bg icon-education">
                     <div>教育</div>
                 </a></li>
                 <li><a href="#tab-2" data-toggle="tab" id="skill" class="active icon-bg icon-skills">
@@ -85,23 +85,38 @@
 
                 <!--RESUME SECOND TAB/EDUCATION TAB DETAILS-->
                 <div class="tab-pane fade in active" id='tab-1'>
-                    <h3 class="title">EDUCATIONS</h3>
-                    <ul class="education-class">
-                        <li>
-                            <h4 class="title">专业<i class="fa fa-sort-desc pull-right"></i></h4>
-                            <div class="list-content">
-                                <h5 class="title">Safety Engine <span class="list-year">(2010 - 2014)</span></h5>
-
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-inverse overflow-hidden">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">
+                                        <i class="fa fa-plus-circle pull-right"></i>
+                                        技术架构
+                                    </a>
+                                </h3>
                             </div>
-                        </li>
-                        <li>
-                            <h4 class="title">学校<i class="fa fa-sort-desc pull-right"></i></h4>
-                            <div class="list-content">
-                                <h5 class="title">河南理工大学 <span class="list-year">(2010 - 2014)</span></h5>
-
+                            <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body">
+                                    11
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="panel panel-inverse overflow-hidden">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+                                        <i class="fa fa-plus-circle pull-right"></i>
+                                        实现功能
+                                    </a>
+                                </h3>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false">
+                                <div class="panel-body">
+                                    11
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div><!--RESUME SECOND TAB/EDUCATION TAB DETAILS ENDS-->
                 <!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
                 <div class="tab-pane fade " id='tab-3'>

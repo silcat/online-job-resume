@@ -13,6 +13,7 @@
         });
     }
     function init() {
+
         initResume();
         initContact()
 
